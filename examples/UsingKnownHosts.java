@@ -21,7 +21,7 @@ public class UsingKnownHosts
 	{
 		String hostname = "somehost";
 		String username = "joe";
-		String password = "joespass";
+		String pwd = "joes";
 
 		File knownHosts = new File("~/.ssh/known_hosts");
 
@@ -42,7 +42,7 @@ public class UsingKnownHosts
 
 			/* Authenticate */
 
-			boolean isAuthenticated = conn.authenticateWithPassword(username, password);
+			boolean isAuthenticated = conn.authenticateWithPassword(username, pwd);
 
 			if (isAuthenticated == false)
 				throw new IOException("Authentication failed.");

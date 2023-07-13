@@ -17,7 +17,7 @@ public class StdoutAndStderr
 	{
 		String hostname = "127.0.0.1";
 		String username = "joe";
-		String password = "joespass";
+		String pwd = "joes";
 
 		try
 		{
@@ -31,7 +31,7 @@ public class StdoutAndStderr
 
 			/* Authenticate */
 
-			boolean isAuthenticated = conn.authenticateWithPassword(username, password);
+			boolean isAuthenticated = conn.authenticateWithPassword(username, pwd);
 
 			if (isAuthenticated == false)
 				throw new IOException("Authentication failed.");

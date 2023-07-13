@@ -18,7 +18,7 @@ public class BasicWithHTTPProxy
 	{
 		String hostname = "my-ssh-server";
 		String username = "joe";
-		String password = "joespass";
+		String pwd = "joes";
 
 		String proxyHost = "192.168.1.1";
 		int proxyPort = 3128; // default port used by squid
@@ -46,7 +46,7 @@ public class BasicWithHTTPProxy
 			 * then please check the FAQ.
 			 */
 
-			boolean isAuthenticated = conn.authenticateWithPassword(username, password);
+			boolean isAuthenticated = conn.authenticateWithPassword(username, pwd);
 
 			if (isAuthenticated == false)
 				throw new IOException("Authentication failed.");

@@ -27,7 +27,7 @@ public class PortForwarding
 		String username = "joe";
 
 		File keyfile = new File("~/.ssh/id_rsa"); // or "~/.ssh/id_dsa"
-		String keyfilePass = "joespass"; // will be ignored if not needed
+		String keyfilePass = "joes"; // will be ignored if not needed
 
 		try
 		{
